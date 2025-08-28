@@ -1,23 +1,25 @@
 :root {
-  /* === Paleta 3: Neutra com Destaque Vibrante === */
+    /*Palhetas de cores ja pontas que peguei na internet */
   --white: #ffffff;
   --neutral-text: #180016;
-  --neutral-accent1: #ff6f61; /* vermelho coral */
-  --neutral-accent2: #00bfa6; /* verde-água */
+  --neutral-accent1: #ff6f61; 
+  --neutral-accent2: #00bfa6; 
 
-  /* === Paleta 4: Dark Mode Sofisticado === */
+
   --dark-bg: #121212;
   --dark-surface: #1e1e1e;
   --dark-text: #eaeaea;
-  --dark-accent1: #bb86fc; /* roxo */
-  --dark-accent2: #3f0461; /* verde neon */
+  --dark-accent1: #bb86fc; 
+  --dark-accent2: #3f0461; 
 
-  /* === Paleta 5: Terrosas e Orgânicas === */
-  --natural-bg: #f2efea;     /* off-white */
-  --natural-primary: #e0c097; /* bege */
-  --natural-secondary: #c97c5d; /* terracota */
-  --natural-text: #4b4b4b;    /* cinza escuro */
+
+  --natural-bg: #f2efea;   
+  --natural-primary: #e0c097;
+  --natural-secondary: #c97c5d; 
+  --natural-text: #4b4b4b;    
 }
+
+
 
 *{
     box-sizing: border-box;
@@ -36,6 +38,11 @@ p, li {
     font-size: 1.2rem
 }
 
+ul, ol, li {
+  list-style: none;
+}
+
+
 header {
     display: flex;
     justify-content: space-between;
@@ -52,9 +59,7 @@ nav {
     gap: 1rem;
 }
 
-ul, ol, li {
-  list-style: none;
-}
+
 
 nav ul, nav ol, nav li {
   display: contents;
