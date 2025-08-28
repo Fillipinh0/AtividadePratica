@@ -1,0 +1,135 @@
+:root {
+  /* === Paleta 3: Neutra com Destaque Vibrante === */
+  --white: #ffffff;
+  --neutral-text: #180016;
+  --neutral-accent1: #ff6f61; /* vermelho coral */
+  --neutral-accent2: #00bfa6; /* verde-água */
+
+  /* === Paleta 4: Dark Mode Sofisticado === */
+  --dark-bg: #121212;
+  --dark-surface: #1e1e1e;
+  --dark-text: #eaeaea;
+  --dark-accent1: #bb86fc; /* roxo */
+  --dark-accent2: #3f0461; /* verde neon */
+
+  /* === Paleta 5: Terrosas e Orgânicas === */
+  --natural-bg: #f2efea;     /* off-white */
+  --natural-primary: #e0c097; /* bege */
+  --natural-secondary: #c97c5d; /* terracota */
+  --natural-text: #4b4b4b;    /* cinza escuro */
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+strong {
+    color: var(--neutral-text);
+}
+p {
+    padding: 0.6rem;
+}
+p, li {
+    font-size: 1.2rem
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    background-color: var(--dark-surface);
+    width: 100%;
+    color: var(--white);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+nav ul, nav ol, nav li {
+  display: contents;
+}
+
+a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.25s;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--dark-accent1);
+
+}
+
+
+main#main_sobre {
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+    background-color: var(--natural-bg);
+    margin: 10vh 30vh;
+    padding: 5rem 2rem;
+    box-shadow: 2px 2px 3.7px rgba(0, 0, 0, 0.219);
+    border-radius: 0.5%;
+    align-items: center;
+}
+
+main#main_formacao {
+    display: flex;
+    row-gap: 1rem;
+    width: 100vh;
+    margin: auto;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--natural-bg);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.24);
+}
+main#main_portifolio {
+    width: 100vh;
+    background-color: var(--natural-bg);
+    display: flex;
+    margin: auto;
+    padding: 2rem;
+    align-items: center;
+    row-gap: 1rem;
+    flex-direction: column;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.24);
+}
+
+main#main_formacao > h1 , main#main_portifolio > h1 {
+    color: var(--dark-accent2);
+}
+
+main h2 {
+    color: var(--neutral-text);
+}
+
+main  section.section_sobre {
+    max-width: 40%;
+}
+
+
+main > section.section_dupla {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem 2rem;
+}
+
+main > section.section_dupla section {
+    width: 40%;
+}
+
+
